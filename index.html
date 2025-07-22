@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="theme-color" content="#0a2647">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Frioelétrico - Especialistas em Refrigeração e Eletricidade</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- LightGallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="sticky-top bg-white">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo + Frioelétrico (left side) -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpg" alt="Logo Frioelétrico" width="60" height="60">
+                    Frioelétrico
+                </a>
+
+                <!-- Contato + Dropdown Menu (right side) -->
+                <div class="d-flex align-items-center">
+                    <a href="https://wa.me/5571996689023" class="nav-contact d-none d-md-inline-flex align-items-center"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-phone-alt me-2"></i> Contato
+                    </a>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown">
+                        <button class="btn-menu" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-home"></i> Início</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-handshake"></i> Bem-Vindo</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-tools"></i> Nossos Serviços</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-images"></i> Galeria</a></li>
+                            <li><a class="dropdown-item" href="https://wa.me/5571996689023"><i
+                                        class="fas fa-calendar-alt" target="_blank" rel="noopener noreferrer"></i>
+                                    Agenda Online</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a class="dropdown-item" href="notificacoes.html"><i class="fas fa-bell"></i>
+                                    Notificações</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Banner -->
+        <section class="welcome-banner animate__animated animate__fadeIn">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Bem-Vindo ao Frioelétrico</h1>
+            </div>
+        </section>
+
+        <!-- Triple Banner Section -->
+        <section class="triple-banner">
+            <!-- First Banner -->
+            <div class="banner-item" style="background-image: url('/images/ft1.jpg')">
+                <div class="banner-content">
+                    <h2 class="banner-title">Especialistas em Refrigeração</h2>
+                    <a href="https://wa.me/5571996689023" class="btn-more" aria-label="WhatsApp" target="_blank"
+                        rel="noopener noreferrer">
+                        <button class="btn-more">Saiba mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Second Banner -->
+            <div class="banner-item" style="background-image: url('/images/ft2.jpg')">
+                <div class="banner-content">
+                    <h2 class="banner-title">Soluções Elétricas</h2>
+                    <a href="https://wa.me/5571996689023" class="btn-more" aria-label="WhatsApp" target="_blank"
+                        rel="noopener noreferrer">
+                        <button class="btn-more">Saiba mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Third Banner -->
+            <div class="banner-item" style="background-image: url('/images/ft3.avif')">
+                <div class="banner-content">
+                    <h2 class="banner-title">Atendimento 24h</h2>
+                    <a href="https://wa.me/5571996689023" class="btn-more" aria-label="WhatsApp" target="_blank"
+                        rel="noopener noreferrer">
+                        <button class="btn-more">Saiba mais</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <h2 class="section-title animate__animated animate__fadeInUp">Nossos Serviços</h2>
+
+                <div class="row">
+                    <!-- Service 1 -->
+                    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                        <div class="card service-card">
+                            <img src="images/ft3.avif" class="card-img-top" alt="Consultoria em Climatização">
+                            <div class="card-body">
+                                <h5 class="card-title">Consultoria em Climatização</h5>
+                                <p class="card-price">Preço negociável</p>
+                                <button class="btn btn-schedule"
+                                    onclick="window.open('https://wa.me/5571996689023', '_blank')" target="_blank"
+                                    rel="noopener noreferrer">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="card service-card">
+                            <img src="images/ft4.avif" class="card-img-top" alt="Manutenção de Refrigeração">
+                            <div class="card-body">
+                                <h5 class="card-title">Manutenção de Refrigeração</h5>
+                                <p class="card-price">Preço negociável</p>
+                                <button class="btn btn-schedule"
+                                    onclick="window.open('https://wa.me/5571996689023', '_blank')" target="_blank"
+                                    rel="noopener noreferrer">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <div class="card service-card">
+                            <img src="images/ft5.avif" class="card-img-top" alt="Manutenção de Refrigeração">
+                            <div class="card-body">
+                                <h5 class="card-title">Manutenção de Refrigeração</h5>
+                                <p class="card-price">Preço negociável</p>
+                                <button class="btn btn-schedule"
+                                    onclick="window.open('https://wa.me/5571996689023', '_blank')" target="_blank"
+                                    rel="noopener noreferrer">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="card service-card">
+                            <img src="images/ft6.avif" class="card-img-top" alt="Consultoria Elétrica">
+                            <div class="card-body">
+                                <h5 class="card-title">Consultoria Elétrica</h5>
+                                <p class="card-price">Preço negociável</p>
+                                <button class="btn btn-schedule"
+                                    onclick="window.open('https://wa.me/5571996689023', '_blank')" target="_blank"
+                                    rel="noopener noreferrer">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="col-md-6 col-lg-4 animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                        <div class="card service-card">
+                            <img src="images/ft7.avif" class="card-img-top" alt="Serviços Elétricos">
+                            <div class="card-body">
+                                <h5 class="card-title">Serviços Elétricos</h5>
+                                <p class="card-price">Preço negociável</p>
+                                <button class="btn btn-schedule"
+                                    onclick="window.open('https://wa.me/5571996689023', '_blank')" target="_blank"
+                                    rel="noopener noreferrer">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="row about-content">
+                    <div class="col-lg-6 about-text">
+                        <h2 class="about-title">Sobre Nós</h2>
+                        <p>Somos uma empresa especializada em soluções de refrigeração e eletricidade, com mais de 15
+                            anos de experiência no mercado. Nossa equipe de profissionais altamente qualificados está
+                            pronta para atender às suas necessidades com excelência e comprometimento.</p>
+                        <p>Oferecemos serviços personalizados para residências, comércios e indústrias, garantindo
+                            qualidade, segurança e eficiência em todos os nossos projetos.</p>
+                        <p>Nossa missão é proporcionar conforto térmico e soluções elétricas inteligentes, com
+                            tecnologia de ponta e atendimento diferenciado.</p>
+                    </div>
+                    <div class="col-lg-6 about-image">
+                        <img src="images/ft8.jpg" alt="Equipe Frioelétrico" class="img-fluid" width="600" height="350">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="gallery-title">Galeria</h2>
+
+                <div class="row" id="lightgallery">
+                    <div class="col-6 col-md-4 col-lg-3 gallery-item"
+                        data-src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Projeto 1">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 gallery-item"
+                        data-src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Projeto 2">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 gallery-item"
+                        data-src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Projeto 3">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 gallery-item"
+                        data-src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            alt="Projeto 4">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 gallery-item"
+                        data-src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80"
+                            alt="Projeto 5">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 gallery-item"
+                        data-src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Projeto 6">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 gallery-item"
+                        data-src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Projeto 7">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 gallery-item"
+                        data-src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            alt="Projeto 8">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Contact Info -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo-container">
+                        <img src="images/logo.jpg" alt="Logo Frioelétrico" class="footer-logo">
+                        <h5 class="footer-title">Frioelétrico</h5>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@meusite.com"> info@meusite.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+5571996689023"> (71) 99668-9023</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span> R. Gonçalo Muniz, 43 - Caixa d'Água, Salvador - BA, 40320-070</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <p class="social-title">Siga-nos</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://wa.me/5571996689023" class="social-icon whatsapp" aria-label="WhatsApp"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h5 class="footer-title">Links Rápidos</h5>
+                    <ul class="footer-menu">
+                        <li><a href="index.html" class="footer-link">Início</a></li>
+                        <li><a href="index.html#services" class="footer-link">Nossos Serviços</a></li>
+                        <li><a href="index.html#about" class="footer-link">Sobre Nós</a></li>
+                        <li><a href="index.html#gallery" class="footer-link">Galeria</a></li>
+                        <li><a href="notificacoes.html" class="footer-link">Notificações</a></li>
+                        <li><a href="https://wa.me/SEUNUMERO" class="footer-link">Agende um Serviço</a></li>
+                    </ul>
+                </div>
+
+                <!-- Information -->
+                <div class="footer-col">
+                    <h5 class="footer-title">Informações</h5>
+                    <ul class="footer-menu">
+                        <li><a href="politica-privacidade.html" class="footer-link">Política de Privacidade</a></li>
+                        <li><a href="termos-condicoes.html" class="footer-link">Termos e Condições</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="trabalhe-conosco.html" class="footer-link">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div class="footer-col">
+                    <h5 class="footer-title">Horário de Atendimento</h5>
+                    <div class="opening-hours">
+                        <div class="hours-item">
+                            <span class="days">Segunda - Sexta:</span>
+                            <span class="hours">8h - 18h</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="days">Sábado:</span>
+                            <span class="hours">9h - 13h</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="days">Domingo:</span>
+                            <span class="hours">Fechado</span>
+                        </div>
+                        <div class="emergency">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Plantão 24h para emergências</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <h5 class="footer-title">Formas de Pagamento</h5>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fab fa-cc-paypal" title="PayPal"></i>
+                            <i class="fas fa-barcode" title="Boleto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="current-year">2023</span> Frioelétrico. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Button -->
+    <button class="chat-button animate__animated animate__pulse animate__infinite"
+        onclick="window.open('https://wa.me/SEUNUMERO', '_blank')" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-comment me-1"></i> Fale conosco no WhatsApp
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- LightGallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

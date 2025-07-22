@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Cliente - Frioelétrico</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="sticky-top bg-white">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo + Frioelétrico (left side) -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpg" alt="Logo Frioelétrico" width="60" height="60">
+                    Frioelétrico
+                </a>
+
+                <!-- Contato + Dropdown Menu (right side) -->
+                <div class="d-flex align-items-center">
+                    <a href="https://wa.me/5571996689023" class="nav-contact d-none d-md-inline-flex align-items-center"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-phone-alt me-2"></i> Contato
+                    </a>
+
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown">
+                        <button class="btn-menu" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-home"></i> Início</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-handshake"></i> Bem-Vindo</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-tools"></i> Nossos Serviços</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-images"></i> Galeria</a></li>
+                            <li><a class="dropdown-item" href="https://wa.me/5571996689023"><i
+                                        class="fas fa-calendar-alt" target="_blank" rel="noopener noreferrer"></i>
+                                    Agenda Online</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a class="dropdown-item" href="notificacoes.html"><i class="fas fa-bell"></i>
+                                    Notificações</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="client-area">
+        <section class="page-header">
+            <div class="container">
+                <h1>Área do Cliente</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Início</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Área do Cliente</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="client-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="client-card text-center">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <h3 class="client-name mt-3">Olá, [Nome do Cliente]</h3>
+                            <p class="text-muted">Último acesso: 01/01/2023</p>
+
+                            <div class="client-menu mt-4">
+                                <a href="#" class="client-menu-item active">
+                                    <i class="fas fa-home me-2"></i> Dashboard
+                                </a>
+                                <a href="#" class="client-menu-item">
+                                    <i class="fas fa-calendar-alt me-2"></i> Meus Agendamentos
+                                </a>
+                                <a href="#" class="client-menu-item">
+                                    <i class="fas fa-file-invoice me-2"></i> Faturas
+                                </a>
+                                <a href="#" class="client-menu-item">
+                                    <i class="fas fa-cog me-2"></i> Configurações
+                                </a>
+                                <a href="#" class="client-menu-item">
+                                    <i class="fas fa-sign-out-alt me-2"></i> Sair
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="client-dashboard">
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Você tem 1 agendamento confirmado para esta semana
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-4">
+                                    <div class="stat-card">
+                                        <div class="stat-icon bg-primary">
+                                            <i class="fas fa-tools"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <h5>Serviços Realizados</h5>
+                                            <p class="stat-number">12</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="stat-card">
+                                        <div class="stat-icon bg-success">
+                                            <i class="fas fa-calendar-check"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <h5>Próximo Serviço</h5>
+                                            <p class="stat-number">15/01/2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="upcoming-service mt-4">
+                                <h4><i class="fas fa-clock me-2"></i>Próximo Atendimento</h4>
+                                <div class="service-card">
+                                    <div class="service-info">
+                                        <h5>Manutenção Preventiva - Ar Condicionado</h5>
+                                        <p><i class="fas fa-calendar-day me-2"></i>15/01/2023 - 09:00 às 12:00</p>
+                                        <p><i class="fas fa-user-tie me-2"></i>Técnico: João Silva</p>
+                                        <p><i class="fas fa-map-marker-alt me-2"></i>Av. Tancredo Neves, 123 -
+                                            Salvador/BA</p>
+                                    </div>
+                                    <div class="service-actions">
+                                        <button class="btn btn-sm btn-outline-primary me-2">
+                                            <i class="fas fa-edit me-1"></i> Remarcar
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-times me-1"></i> Cancelar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="service-history mt-5">
+                                <h4><i class="fas fa-history me-2"></i>Histórico de Serviços</h4>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Data</th>
+                                                <th>Serviço</th>
+                                                <th>Técnico</th>
+                                                <th>Valor</th>
+                                                <th>Ações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10/12/2022</td>
+                                                <td>Reparo na instalação elétrica</td>
+                                                <td>Carlos Oliveira</td>
+                                                <td>R$ 350,00</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-secondary">
+                                                        <i class="fas fa-file-invoice"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>25/11/2022</td>
+                                                <td>Manutenção de ar-condicionado</td>
+                                                <td>João Silva</td>
+                                                <td>R$ 280,00</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-secondary">
+                                                        <i class="fas fa-file-invoice"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15/10/2022</td>
+                                                <td>Instalação de disjuntor</td>
+                                                <td>Maria Santos</td>
+                                                <td>R$ 420,00</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-outline-secondary">
+                                                        <i class="fas fa-file-invoice"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Próxima</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div class="quick-actions mt-5">
+                                <h4><i class="fas fa-bolt me-2"></i>Ações Rápidas</h4>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <a href="#" class="action-card">
+                                            <div class="action-icon bg-info">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            <p>Novo Agendamento</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <a href="#" class="action-card">
+                                            <div class="action-icon bg-warning">
+                                                <i class="fas fa-file-alt"></i>
+                                            </div>
+                                            <p>Solicitar Orçamento</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <a href="#" class="action-card">
+                                            <div class="action-icon bg-danger">
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                            </div>
+                                            <p>Emergência 24h</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Contact Info -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo-container">
+                        <img src="images/logo.jpg" alt="Logo Frioelétrico" class="footer-logo">
+                        <h5 class="footer-title">Frioelétrico</h5>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@meusite.com"> info@meusite.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+5571996689023"> (71) 99668-9023</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span> R. Gonçalo Muniz, 43 - Caixa d'Água, Salvador - BA, 40320-070</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <p class="social-title">Siga-nos</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://wa.me/5571996689023" class="social-icon whatsapp" aria-label="WhatsApp"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h5 class="footer-title">Links Rápidos</h5>
+                    <ul class="footer-menu">
+                        <li><a href="index.html" class="footer-link">Início</a></li>
+                        <li><a href="index.html#services" class="footer-link">Nossos Serviços</a></li>
+                        <li><a href="index.html#about" class="footer-link">Sobre Nós</a></li>
+                        <li><a href="index.html#gallery" class="footer-link">Galeria</a></li>
+                        <li><a href="notificacoes.html" class="footer-link">Notificações</a></li>
+                        <li><a href="https://wa.me/SEUNUMERO" class="footer-link">Agende um Serviço</a></li>
+                    </ul>
+                </div>
+
+                <!-- Information -->
+                <div class="footer-col">
+                    <h5 class="footer-title">Informações</h5>
+                    <ul class="footer-menu">
+                        <li><a href="politica-privacidade.html" class="footer-link">Política de Privacidade</a></li>
+                        <li><a href="termos-condicoes.html" class="footer-link">Termos e Condições</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="trabalhe-conosco.html" class="footer-link">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hours -->
+                <div class="footer-col">
+                    <h5 class="footer-title">Horário de Atendimento</h5>
+                    <div class="opening-hours">
+                        <div class="hours-item">
+                            <span class="days">Segunda - Sexta:</span>
+                            <span class="hours">8h - 18h</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="days">Sábado:</span>
+                            <span class="hours">9h - 13h</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="days">Domingo:</span>
+                            <span class="hours">Fechado</span>
+                        </div>
+                        <div class="emergency">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Plantão 24h para emergências</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <h5 class="footer-title">Formas de Pagamento</h5>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fab fa-cc-paypal" title="PayPal"></i>
+                            <i class="fas fa-barcode" title="Boleto"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="current-year">2023</span> Frioelétrico. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Button -->
+    <button class="chat-button animate__animated animate__pulse animate__infinite"
+        onclick="window.open('https://wa.me/SEUNUMERO', '_blank')" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-comment me-1"></i> Fale conosco no WhatsApp
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
